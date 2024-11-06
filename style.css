@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.eye-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eye {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: white;
+    border: 5px solid black;
+    overflow: hidden;
+}
+
+.pupil {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
+}
